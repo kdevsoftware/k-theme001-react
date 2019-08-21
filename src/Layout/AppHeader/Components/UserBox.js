@@ -41,7 +41,7 @@ class UserBox extends React.Component {
                     <Nav vertical>
                       <NavItem className="nav-item-header">Activity</NavItem>
                       <NavItem>
-                        <NavLink href="javascript:void(0);">
+                        <NavLink href="#">
                           Chat
                           <div className="ml-auto badge badge-pill badge-info">
                             8
@@ -49,25 +49,23 @@ class UserBox extends React.Component {
                         </NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink href="javascript:void(0);">
-                          Recover Password
-                        </NavLink>
+                        <NavLink href="#">Recover Password</NavLink>
                       </NavItem>
                       <NavItem className="nav-item-header">My Account</NavItem>
                       <NavItem>
-                        <NavLink href="javascript:void(0);">
+                        <NavLink href="#">
                           Settings
                           <div className="ml-auto badge badge-success">New</div>
                         </NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink href="javascript:void(0);">
+                        <NavLink href="#">
                           Messages
                           <div className="ml-auto badge badge-warning">512</div>
                         </NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink href="javascript:void(0);">Logs</NavLink>
+                        <NavLink href="#">Logs</NavLink>
                       </NavItem>
                     </Nav>
                   </DropdownMenu>

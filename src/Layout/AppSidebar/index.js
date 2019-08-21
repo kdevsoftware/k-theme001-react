@@ -11,7 +11,7 @@ class AppSidebar extends Component {
       <Fragment>
         {/* <div className="sidebar-mobile-overlay" /> */}
 
-        <div className="app-sidebar bg-royal sidebar-shadow">
+        <div className="app-sidebar sidebar-shadow">
           <HeaderLogo />
 
           <PerfectScrollbar>
