@@ -1,11 +1,11 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 
 import HeaderLogo from '../AppLogo';
 import SearchBox from './Components/SearchBox';
 import UserBox from './Components/UserBox';
 
 class Header extends React.Component {
-  render() { 
+  render() {
     return (
       <Fragment>
         <HeaderLogo />
@@ -23,5 +23,5 @@ class Header extends React.Component {
     );
   }
 }
- 
+
 export default Header;
