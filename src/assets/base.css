@@ -11517,6 +11517,24 @@ button,
   display: flex;
 }
 
+.fixed-footer .app-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 7;
+}
+.fixed-footer .app-footer .app-footer__inner {
+  margin-left: 280px;
+  box-shadow: 0.3rem -0.46875rem 2.1875rem rgba(4, 9, 20, 0.02),
+    0.3rem -0.9375rem 1.40625rem rgba(4, 9, 20, 0.02),
+    0.3rem -0.25rem 0.53125rem rgba(4, 9, 20, 0.04),
+    0.3rem -0.125rem 0.1875rem rgba(4, 9, 20, 0.02);
+}
+.fixed-footer .app-main .app-main__outer {
+  padding-bottom: 60px;
+}
+
 .app-page-title {
   padding: 30px;
   margin: -30px -30px 30px;
