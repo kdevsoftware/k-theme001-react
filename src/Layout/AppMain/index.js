@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import Dashboards from '../../DemoPages/Dashboards';
@@ -11,7 +11,7 @@ import Charts from '../../DemoPages/Charts';
 
 const AppMain = () => {
   return (
-    <div>
+    <Fragment>
       <Route path="/dashboards" component={Dashboards} />
       <Route path="/elements" component={Elements} />
       <Route path="/components" component={Components} />
@@ -25,7 +25,7 @@ const AppMain = () => {
         path="/"
         render={() => <Redirect to="/dashboards/basic" />}
       />
-    </div>
+    </Fragment>
   );
 };
 

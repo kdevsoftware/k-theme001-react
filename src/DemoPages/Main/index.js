@@ -4,7 +4,7 @@ import AppMain from '../../Layout/AppMain';
 class Main extends React.Component {
   render() {
     return (
-      <div>
+      <div className="app-container app-theme-white fixed-header fixed-sidebar fixed-footer">
         <AppMain />
       </div>
     );

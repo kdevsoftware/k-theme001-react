@@ -8,15 +8,17 @@ class Header extends React.Component {
   render() {
     return (
       <Fragment>
-        <HeaderLogo />
+        <div className="app-header header-shadow">
+          <HeaderLogo />
 
-        <div>
-          <div className="app-header-left">
-            <SearchBox />
-          </div>
+          <div className="app-header__content">
+            <div className="app-header-left">
+              <SearchBox />
+            </div>
 
-          <div className="app-header-right">
-            <UserBox />
+            <div className="app-header-right">
+              <UserBox />
+            </div>
           </div>
         </div>
       </Fragment>
