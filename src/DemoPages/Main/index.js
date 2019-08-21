@@ -2,7 +2,7 @@ import React from 'react';
 import AppMain from '../../Layout/AppMain';
 
 class Main extends React.Component {
-  render() { 
+  render() {
     return (
       <div>
         <AppMain />
@@ -10,5 +10,5 @@ class Main extends React.Component {
     );
   }
 }
- 
+
 export default Main;
