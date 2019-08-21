@@ -8,5 +8,4 @@ class HeaderLogo extends React.Component {
   }
 }
  
-
-<div>HeaderLogo works!</div>
+export default HeaderLogo;
