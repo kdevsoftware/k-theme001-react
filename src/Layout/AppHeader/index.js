@@ -1,4 +1,7 @@
 import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import cx from 'classnames';
 
 import HeaderLogo from '../AppLogo';
 import SearchBox from './Components/SearchBox';
@@ -6,12 +9,32 @@ import UserBox from './Components/UserBox';
 
 class Header extends React.Component {
   render() {
+    let {
+      headerBackgroundColor,
+      enableMobileMenuSmall,
+      enableHeaderShadow
+    } = this.props;
+
     return (
       <Fragment>
-        <div className="app-header header-shadow">
+        <ReactCSSTransitionGroup
+          component="div"
+          className={cx('app-header', headerBackgroundColor, {
+            'header-shadow': enableHeaderShadow
+          })}
+          transitionName="HeaderAnimation"
+          transitionAppear={true}
+          transitionAppearTimeout={1500}
+          transitionEnter={false}
+          transitionLeave={false}
+        >
           <HeaderLogo />
 
-          <div className="app-header__content">
+          <div
+            className={cx('app-header__content', {
+              'header-mobile-open': enableMobileMenuSmall
+            })}
+          >
             <div className="app-header-left">
               <SearchBox />
             </div>
@@ -20,10 +43,22 @@ class Header extends React.Component {
               <UserBox />
             </div>
           </div>
-        </div>
+        </ReactCSSTransitionGroup>
       </Fragment>
     );
   }
 }
 
-export default Header;
+const mapStateToProps = state => ({
+  enableHeaderShadow: state.ThemeOptions.enableHeaderShadow,
+  closedSmallerSidebar: state.ThemeOptions.closedSmallerSidebar,
+  headerBackgroundColor: state.ThemeOptions.headerBackgroundColor,
+  enableMobileMenuSmall: state.ThemeOptions.enableMobileMenuSmall
+});
+
+const mapDispatchToProps = dispatch => ({});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header);

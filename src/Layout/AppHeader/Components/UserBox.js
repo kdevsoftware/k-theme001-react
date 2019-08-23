@@ -11,12 +11,33 @@ import {
   UncontrolledTooltip
 } from 'reactstrap';
 
+import { toast, Bounce } from 'react-toastify';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 import avatar1 from '../../../assets/images/avatars/1.jpg';
 
 class UserBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
+
+  notify2 = () =>
+    (this.toastId = toast(
+      "You don't have any new items in your calendar for today! Go out and play!",
+      {
+        transition: Bounce,
+        closeButton: true,
+        autoClose: 5000,
+        position: 'bottom-center',
+        type: 'success'
+      }
+    ));
+
   render() {
     return (
       <Fragment>
