@@ -1,3 +1,5 @@
+import sideBar6 from '../assets/utils/images/sidebar/city1.jpg';
+
 export const SET_ENABLE_BACKGROUND_IMAGE =
   'THEME_OPTIONS/SET_ENABLE_BACKGROUND_IMAGE';
 
@@ -117,7 +119,27 @@ export const setBackgroundImage = backgroundImage => ({
   backgroundImage
 });
 
-export default function reducer(state = {}, action) {
+export default function reducer(
+  state = {
+    backgroundColor: 'bg-royal sidebar-text-light',
+    headerBackgroundColor: 'bg-strong-bliss header-text-light',
+    enableMobileMenuSmall: '',
+    enableBackgroundImage: true,
+    enableClosedSidebar: false,
+    enableFixedHeader: true,
+    enableHeaderShadow: true,
+    enableSidebarShadow: true,
+    enableFixedFooter: true,
+    enableFixedSidebar: true,
+    colorScheme: 'white',
+    backgroundImage: sideBar6,
+    backgroundImageOpacity: 'opacity-06',
+    enablePageTitleIcon: true,
+    enablePageTitleSubheading: true,
+    enablePageTabsAlt: false
+  },
+  action
+) {
   switch (action.type) {
   }
 
