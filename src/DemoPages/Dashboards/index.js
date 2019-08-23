@@ -6,24 +6,22 @@ import AppSidebar from '../../Layout/AppSidebar';
 import AppFooter from '../../Layout/AppFooter';
 import BasicDashboard from './Basic';
 
-const Dashboards = () => {
-  return (
-    <Fragment>
-      <AppHeader />
+const Dashboards = ({ match }) => (
+  <Fragment>
+    <AppHeader />
 
-      <div className="app-main">
-        <AppSidebar />
+    <div className="app-main">
+      <AppSidebar />
 
-        <div className="app-main__outer">
-          <div className="app-main__inner">
-            <Route path="/dashboards/basic" component={BasicDashboard} />
-          </div>
-
-          <AppFooter />
+      <div className="app-main__outer">
+        <div className="app-main__inner">
+          <Route path={`${match.url}/basic`} component={BasicDashboard} />
         </div>
+
+        <AppFooter />
       </div>
-    </Fragment>
-  );
-};
+    </div>
+  </Fragment>
+);
 
 export default Dashboards;
