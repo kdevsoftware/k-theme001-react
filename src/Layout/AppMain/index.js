@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import Dashboards from '../../DemoPages/Dashboards';
 import Elements from '../../DemoPages/Elements';
@@ -25,6 +26,8 @@ const AppMain = () => {
         path="/"
         render={() => <Redirect to="/dashboards/basic" />}
       />
+
+      <ToastContainer />
     </Fragment>
   );
 };
