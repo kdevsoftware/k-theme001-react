@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import {
   Row,
@@ -66,7 +67,14 @@ class BasicExample extends Component {
   render() {
     return (
       <Fragment>
-        <div>
+        <ReactCSSTransitionGroup
+          component="div"
+          transitionName="TabsAnimation"
+          transitionAppear={true}
+          transitionAppearTimeout={0}
+          transitionEnter={false}
+          transitionLeave={false}
+        >
           <div>
             <Row>
               <Col md="4">
@@ -104,9 +112,7 @@ class BasicExample extends Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="#">
-                              Recover Password
-                            </NavLink>
+                            <NavLink href="#">Recover Password</NavLink>
                           </NavItem>
                           <NavItem className="nav-item-header">
                             My Account
@@ -250,9 +256,7 @@ class BasicExample extends Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="#">
-                              Recover Password
-                            </NavLink>
+                            <NavLink href="#">Recover Password</NavLink>
                           </NavItem>
                           <NavItem className="nav-item-header">
                             My Account
@@ -1153,7 +1157,7 @@ class BasicExample extends Component {
               </Col>
             </Row>
           </div>
-        </div>
+        </ReactCSSTransitionGroup>
       </Fragment>
     );
   }
