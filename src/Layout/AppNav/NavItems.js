@@ -1,12 +1,9 @@
-export const MainNav = [
+export const NavItems = [
   {
     icon: 'pe-7s-rocket',
     label: 'Dashboard Example',
     to: '#/dashboards/basic'
-  }
-];
-
-export const ComponentsNav = [
+  },
   {
     icon: 'pe-7s-diamond',
     label: 'Elements',
@@ -83,10 +80,7 @@ export const ComponentsNav = [
     icon: 'pe-7s-display2',
     label: 'Regular Tables',
     to: '#/tables/regular-tables'
-  }
-];
-
-export const FormsNav = [
+  },
   {
     icon: 'pe-7s-light',
     label: 'Controls',
@@ -101,18 +95,12 @@ export const FormsNav = [
     icon: 'pe-7s-pendrive',
     label: 'Validation',
     to: '#/forms/validation'
-  }
-];
-
-export const WidgetsNav = [
+  },
   {
     icon: 'pe-7s-graph2',
     label: 'Dashboard Boxes',
     to: '#/widgets/dashboard-boxes'
-  }
-];
-
-export const ChartsNav = [
+  },
   {
     icon: 'pe-7s-graph2',
     label: 'ChartJS',
