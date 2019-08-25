@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 
 import './assets/base.css';
 import * as serviceWorker from './serviceWorker';
-import Main from './DemoPages/Main';
+import AppMain from './Layout/AppMain';
 import configureStore from './config/configureStore';
 
 const rootElement = document.getElementById('root');
@@ -22,6 +22,6 @@ const renderApp = Component => {
   );
 };
 
-renderApp(Main);
+renderApp(AppMain);
 
 serviceWorker.unregister();
