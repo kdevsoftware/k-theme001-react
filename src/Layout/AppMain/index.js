@@ -49,35 +49,33 @@ class Main extends React.Component {
             { 'sidebar-mobile-open': enableMobileMenu }
           )}
         >
-          <Fragment>
-            <AppHeader />
+          <AppHeader />
 
-            <div className="app-main">
-              <AppSidebar />
+          <div className="app-main">
+            <AppSidebar />
 
-              <div className="app-main__outer">
-                <div className="app-main__inner">
-                  <Route path="/dashboards" component={Dashboards} />
-                  <Route path="/elements" component={Elements} />
-                  <Route path="/components" component={Components} />
-                  <Route path="/tables" component={Tables} />
-                  <Route path="/widgets" component={Widgets} />
-                  <Route path="/forms" component={Forms} />
-                  <Route path="/charts" component={Charts} />
+            <div className="app-main__outer">
+              <div className="app-main__inner">
+                <Route path="/dashboards" component={Dashboards} />
+                <Route path="/elements" component={Elements} />
+                <Route path="/components" component={Components} />
+                <Route path="/tables" component={Tables} />
+                <Route path="/widgets" component={Widgets} />
+                <Route path="/forms" component={Forms} />
+                <Route path="/charts" component={Charts} />
 
-                  <Route
-                    exact
-                    path="/"
-                    render={() => <Redirect to="/dashboards/basic" />}
-                  />
-                </div>
-
-                <AppFooter />
+                <Route
+                  exact
+                  path="/"
+                  render={() => <Redirect to="/dashboards/basic" />}
+                />
               </div>
-            </div>
 
-            <ToastContainer />
-          </Fragment>
+              <AppFooter />
+            </div>
+          </div>
+
+          <ToastContainer />
         </div>
       </Fragment>
     );

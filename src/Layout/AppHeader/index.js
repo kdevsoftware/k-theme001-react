@@ -17,16 +17,10 @@ class Header extends React.Component {
 
     return (
       <Fragment>
-        <ReactCSSTransitionGroup
-          component="div"
+        <div
           className={cx('app-header', headerBackgroundColor, {
             'header-shadow': enableHeaderShadow
           })}
-          transitionName="HeaderAnimation"
-          transitionAppear={true}
-          transitionAppearTimeout={1500}
-          transitionEnter={false}
-          transitionLeave={false}
         >
           <HeaderLogo />
 
@@ -43,7 +37,7 @@ class Header extends React.Component {
               <UserBox />
             </div>
           </div>
-        </ReactCSSTransitionGroup>
+        </div>
       </Fragment>
     );
   }
