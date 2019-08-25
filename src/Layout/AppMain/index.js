@@ -8,6 +8,7 @@ import {
 import { connect } from 'react-redux';
 import cx from 'classnames';
 import { ToastContainer } from 'react-toastify';
+import ResizeDetector from 'react-resize-detector';
 
 import Dashboards from '../../DemoPages/Dashboards';
 import Elements from '../../DemoPages/Elements';
@@ -35,49 +36,54 @@ class Main extends React.Component {
     } = this.props;
 
     return (
-      <Fragment>
-        <div
-          className={cx(
-            'app-container app-theme-' + colorScheme,
-            { 'fixed-header': enableFixedHeader },
-            { 'fixed-sidebar': enableFixedSidebar /* || width < 1250 */ },
-            { 'fixed-footer': enableFixedFooter },
-            { 'closed-sidebar': enableClosedSidebar /* || width < 1250 */ },
-            {
-              'closed-sidebar-mobile': closedSmallerSidebar /* || width < 1250 */
-            },
-            { 'sidebar-mobile-open': enableMobileMenu }
-          )}
-        >
-          <AppHeader />
+      <ResizeDetector
+        handleWidth
+        render={({ width }) => (
+          <Fragment>
+            <div
+              className={cx(
+                'app-container app-theme-' + colorScheme,
+                { 'fixed-header': enableFixedHeader },
+                { 'fixed-sidebar': enableFixedSidebar || width < 1250 },
+                { 'fixed-footer': enableFixedFooter },
+                { 'closed-sidebar': enableClosedSidebar || width < 1250 },
+                {
+                  'closed-sidebar-mobile': closedSmallerSidebar || width < 1250
+                },
+                { 'sidebar-mobile-open': enableMobileMenu }
+              )}
+            >
+              <AppHeader />
 
-          <div className="app-main">
-            <AppSidebar />
+              <div className="app-main">
+                <AppSidebar />
 
-            <div className="app-main__outer">
-              <div className="app-main__inner">
-                <Route path="/dashboards" component={Dashboards} />
-                <Route path="/elements" component={Elements} />
-                <Route path="/components" component={Components} />
-                <Route path="/tables" component={Tables} />
-                <Route path="/widgets" component={Widgets} />
-                <Route path="/forms" component={Forms} />
-                <Route path="/charts" component={Charts} />
+                <div className="app-main__outer">
+                  <div className="app-main__inner">
+                    <Route path="/dashboards" component={Dashboards} />
+                    <Route path="/elements" component={Elements} />
+                    <Route path="/components" component={Components} />
+                    <Route path="/tables" component={Tables} />
+                    <Route path="/widgets" component={Widgets} />
+                    <Route path="/forms" component={Forms} />
+                    <Route path="/charts" component={Charts} />
 
-                <Route
-                  exact
-                  path="/"
-                  render={() => <Redirect to="/dashboards/basic" />}
-                />
+                    <Route
+                      exact
+                      path="/"
+                      render={() => <Redirect to="/dashboards/basic" />}
+                    />
+                  </div>
+
+                  <AppFooter />
+                </div>
               </div>
 
-              <AppFooter />
+              <ToastContainer />
             </div>
-          </div>
-
-          <ToastContainer />
-        </div>
-      </Fragment>
+          </Fragment>
+        )}
+      />
     );
   }
 }

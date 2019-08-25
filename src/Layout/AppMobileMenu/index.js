@@ -64,7 +64,7 @@ class AppMobileMenu extends React.Component {
               className={cx('btn-icon btn-icon-only', {
                 active: this.state.activeSecondaryMenuMobile
               })}
-              color="primary"
+              color="info"
               onClick={() =>
                 this.setState({
                   activeSecondaryMenuMobile: !this.state

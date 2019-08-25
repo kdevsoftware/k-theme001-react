@@ -13,24 +13,24 @@
 /*!
  Import fonts
  */
- @font-face {
+@font-face {
   font-family: 'MavenPro-Regular';
-  src: url('./fonts/MavenPro/MavenPro-Regular.ttf')  format('truetype');
+  src: url('./fonts/MavenPro/MavenPro-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'MavenPro-Medium';
-  src: url('./fonts/MavenPro/MavenPro-Medium.ttf')  format('truetype');
+  src: url('./fonts/MavenPro/MavenPro-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'MavenPro-Bold';
-  src: url('./fonts/MavenPro/MavenPro-Bold.ttf')  format('truetype');
+  src: url('./fonts/MavenPro/MavenPro-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'MavenPro-Black';
-  src: url('./fonts/MavenPro/MavenPro-Black.ttf')  format('truetype');
+  src: url('./fonts/MavenPro/MavenPro-Black.ttf') format('truetype');
 }
 
 /*!
@@ -440,9 +440,9 @@ section {
 
 body {
   margin: 0;
-  font-family: MavenPro-Regular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: MavenPro-Regular, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10903,7 +10903,7 @@ button,
   position: relative;
   flex: 0 0 280px;
   margin-top: -60px;
-  padding-top: 60px;
+  padding-top: 80px;
   transition: all 0.2s;
 }
 .app-sidebar .app-sidebar__inner {
@@ -10932,6 +10932,7 @@ button,
 }
 .app-sidebar.sidebar-shadow {
   box-shadow: 7px 0 60px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #dde1e5;
 }
 
 .app-sidebar__heading {
@@ -15793,10 +15794,8 @@ a.badge-alternate:focus {
   src: url('./fonts/Linearicons-Free/Linearicons-Free.eot?w118d');
   src: url('./fonts/Linearicons-Free/Linearicons-Free.eot?#iefixw118d')
       format('embedded-opentype'),
-    url('./fonts/Linearicons-Free/Linearicons-Free.woff2?w118d')
-      format('woff2'),
-    url('./fonts/Linearicons-Free/Linearicons-Free.woff?w118d')
-      format('woff'),
+    url('./fonts/Linearicons-Free/Linearicons-Free.woff2?w118d') format('woff2'),
+    url('./fonts/Linearicons-Free/Linearicons-Free.woff?w118d') format('woff'),
     url('./fonts/Linearicons-Free/Linearicons-Free.ttf?w118d')
       format('truetype'),
     url('./fonts/Linearicons-Free/Linearicons-Free.svg?w118d#Linearicons-Free')
@@ -16728,10 +16727,14 @@ a.badge-alternate:focus {
     position: fixed !important;
     z-index: 50;
     left: 5% !important;
-    top: 50% !important;
+    top: 30% !important;
     width: 90% !important;
     transform: translateY(-50%) !important;
     min-width: 10px !important;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(0, 0, 0, 0.03),
+      0 0.9375rem 1.40625rem rgba(0, 0, 0, 0.03),
+      0 0.25rem 0.53125rem rgba(0, 0, 0, 0.05),
+      0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
   }
   .popover .btn-icon-vertical .btn-icon-wrapper,
   .dropdown-menu .btn-icon-vertical .btn-icon-wrapper {
