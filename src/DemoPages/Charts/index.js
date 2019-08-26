@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Route } from 'react-router-dom';
 
-const Charts = () => {
-  return (
-    <div>Charts works!</div>
-  );
-}
- 
+import ChartsChartJs from './ChartJs/';
+
+const Charts = ({ match }) => (
+  <Fragment>
+    <Route path={`${match.url}/chartjs`} component={ChartsChartJs} />
+  </Fragment>
+);
+
 export default Charts;
