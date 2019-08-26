@@ -2,6 +2,7 @@
   "name": "k-theme001-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kdevsoftware.github.io/dashboards/basic",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
