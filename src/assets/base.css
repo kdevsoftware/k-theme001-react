@@ -977,9 +977,12 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.row.form-group {
+  align-items: center;
 }
 
 .no-gutters {
