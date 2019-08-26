@@ -31,7 +31,7 @@ class FormElementsLayouts extends React.Component {
       <Fragment>
         <PageTitle
           heading="Form Layouts"
-          subheading="Build whatever layout you need with our ArchitectUI framework."
+          subheading="Build whatever layout you need with my kdev-theme001-react framework."
           icon="pe-7s-graph text-success"
         />
 
