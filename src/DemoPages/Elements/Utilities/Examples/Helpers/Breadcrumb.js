@@ -9,16 +9,16 @@ const BreadcrumbExample = props => {
       </Breadcrumb>
       <Breadcrumb>
         <BreadcrumbItem>
-          <a href="javascript:void(0);">Home</a>{' '}
+          <a href={window.location.href}>Home</a>{' '}
         </BreadcrumbItem>
         <BreadcrumbItem active>Library</BreadcrumbItem>
       </Breadcrumb>
       <Breadcrumb>
         <BreadcrumbItem>
-          <a href="javascript:void(0);">Home</a>{' '}
+          <a href={window.location.href}>Home</a>{' '}
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <a href="javascript:void(0);">Library</a>{' '}
+          <a href={window.location.href}>Library</a>{' '}
         </BreadcrumbItem>
         <BreadcrumbItem active>Data</BreadcrumbItem>
       </Breadcrumb>

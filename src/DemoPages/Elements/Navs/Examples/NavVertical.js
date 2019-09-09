@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {
-  Button,
   UncontrolledButtonDropdown,
   DropdownToggle,
   Dropdown,
-  DropdownMenu,
-  DropdownItem
+  DropdownMenu
 } from 'reactstrap';
 
 import {
@@ -66,10 +64,10 @@ class NavsVertical extends React.Component {
                     <Col>
                       <Nav vertical>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">Link</NavLink>
+                          <NavLink href="#">Link</NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">
+                          <NavLink href="#">
                             Link
                             <div className="ml-auto badge badge-success">
                               New
@@ -77,7 +75,7 @@ class NavsVertical extends React.Component {
                           </NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">
+                          <NavLink href="#">
                             Another Link
                             <div className="ml-auto badge badge-warning">
                               512
@@ -85,7 +83,7 @@ class NavsVertical extends React.Component {
                           </NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink disabled href="javascript:void(0);">
+                          <NavLink disabled href="#">
                             Disabled Link
                           </NavLink>
                         </NavItem>
@@ -94,7 +92,7 @@ class NavsVertical extends React.Component {
                     <Col>
                       <Nav vertical>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">
+                          <NavLink href="#">
                             <i className="nav-link-icon lnr-inbox"> </i>
                             <span>Inbox</span>
                             <div className="ml-auto badge badge-pill badge-secondary">
@@ -103,7 +101,7 @@ class NavsVertical extends React.Component {
                           </NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">
+                          <NavLink href="#">
                             <i className="nav-link-icon lnr-book"> </i>
                             <span>Book</span>
                             <div className="ml-auto badge badge-pill badge-danger">
@@ -112,13 +110,13 @@ class NavsVertical extends React.Component {
                           </NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink href="javascript:void(0);">
+                          <NavLink href="#">
                             <i className="nav-link-icon lnr-picture"> </i>
                             <span>Picture</span>
                           </NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink disabled href="javascript:void(0);">
+                          <NavLink disabled href="#">
                             <i className="nav-link-icon lnr-file-empty"> </i>
                             <span>File Disabled</span>
                           </NavLink>
@@ -139,10 +137,10 @@ class NavsVertical extends React.Component {
                       <DropdownMenu>
                         <Nav vertical>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">Link</NavLink>
+                            <NavLink href="#">Link</NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">
+                            <NavLink href="#">
                               Link
                               <div className="ml-auto badge badge-success">
                                 New
@@ -150,7 +148,7 @@ class NavsVertical extends React.Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">
+                            <NavLink href="#">
                               Another Link
                               <div className="ml-auto badge badge-warning">
                                 512
@@ -158,7 +156,7 @@ class NavsVertical extends React.Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink disabled href="javascript:void(0);">
+                            <NavLink disabled href="#">
                               Disabled Link
                             </NavLink>
                           </NavItem>
@@ -183,7 +181,7 @@ class NavsVertical extends React.Component {
                       <DropdownMenu>
                         <Nav vertical>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">
+                            <NavLink href="#">
                               <i className="nav-link-icon lnr-inbox"> </i>
                               <span>Inbox</span>
                               <div className="ml-auto badge badge-pill badge-secondary">
@@ -192,7 +190,7 @@ class NavsVertical extends React.Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">
+                            <NavLink href="#">
                               <i className="nav-link-icon lnr-book"> </i>
                               <span>Book</span>
                               <div className="ml-auto badge badge-pill badge-danger">
@@ -201,13 +199,13 @@ class NavsVertical extends React.Component {
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink href="javascript:void(0);">
+                            <NavLink href="#">
                               <i className="nav-link-icon lnr-picture"> </i>
                               <span>Picture</span>
                             </NavLink>
                           </NavItem>
                           <NavItem>
-                            <NavLink disabled href="javascript:void(0);">
+                            <NavLink disabled href="#">
                               <i className="nav-link-icon lnr-file-empty"> </i>
                               <span>File Disabled</span>
                             </NavLink>

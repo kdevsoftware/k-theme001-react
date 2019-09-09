@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {
-  BrowserRouter as Router,
+  
   Route,
   Redirect,
   withRouter
@@ -31,8 +31,7 @@ class Main extends React.Component {
       enableFixedFooter,
       enableClosedSidebar,
       closedSmallerSidebar,
-      enableMobileMenu,
-      enablePageTabsAlt
+      enableMobileMenu
     } = this.props;
 
     return (

@@ -5,11 +5,7 @@ import {
   Col,
   Card,
   CardBody,
-  CardTitle,
-  Button,
-  ModalHeader,
-  ModalBody,
-  ModalFooter
+  CardTitle
 } from 'reactstrap';
 
 import ModalExample from './Modal';
@@ -22,10 +18,6 @@ import ModalFadeless from './ModalFadeless';
 import ModalNested from './ModalNested';
 
 class ModalsExample extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Fragment>

@@ -37,8 +37,6 @@ class HeaderLogo extends React.Component {
   render() {
     let { enableClosedSidebar } = this.props;
 
-    const {} = this.state;
-
     return (
       <Fragment>
         <div className="app-header__logo">

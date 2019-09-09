@@ -100,21 +100,6 @@ const Radio = ({ options, name, onChange, checked = false }) => {
   });
 };
 
-function getType(type) {
-  switch (type) {
-    case 'default':
-    default:
-      return 'toast';
-    case 'success':
-      return 'toast.success';
-    case 'error':
-      return 'toast.error';
-    case 'info':
-      return 'toast.info';
-    case 'warning':
-      return 'toast.warn';
-  }
-}
 
 class ToastifyAlerts extends Component {
   state = ToastifyAlerts.getDefaultState();

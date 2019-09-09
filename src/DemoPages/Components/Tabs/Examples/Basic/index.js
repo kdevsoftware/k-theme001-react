@@ -11,13 +11,10 @@ import {
   Col,
   Card,
   CardBody,
-  CardHeader,
   CardTitle,
   Button,
   ButtonGroup
 } from 'reactstrap';
-import { faCommentDots, faBullhorn } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class TabsExample extends React.Component {
   constructor(props) {
@@ -56,7 +53,7 @@ class TabsExample extends React.Component {
                   <Nav tabs="true">
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '1'
                         })}
@@ -69,7 +66,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '2'
                         })}
@@ -82,7 +79,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '3'
                         })}
@@ -133,7 +130,7 @@ class TabsExample extends React.Component {
                   <Nav tabs="true" justified>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '1'
                         })}
@@ -146,7 +143,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '2'
                         })}
@@ -159,7 +156,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '3'
                         })}
@@ -288,7 +285,7 @@ class TabsExample extends React.Component {
                   <Nav pills>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '1'
                         })}
@@ -301,7 +298,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '2'
                         })}
@@ -314,7 +311,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '3'
                         })}
@@ -365,7 +362,7 @@ class TabsExample extends React.Component {
                   <Nav pills fill>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '1'
                         })}
@@ -378,7 +375,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '2'
                         })}
@@ -391,7 +388,7 @@ class TabsExample extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="javascript:void(0);"
+                        href="#"
                         className={classnames({
                           active: this.state.activeTab === '3'
                         })}

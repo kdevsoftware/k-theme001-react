@@ -6,7 +6,6 @@ import {
   Col,
   Card,
   CardImg,
-  CardText,
   CardBody,
   CardTitle,
   CardSubtitle,
@@ -97,7 +96,7 @@ class CardsBasic extends Component {
                   top
                   width="100%"
                   src="https://www.istockphoto.com/resources/images/PhotoFTLP/PetsAnimals-942206906.jpg"
-                  alt="Card image cap"
+                  alt=""
                 />
                 <CardBody>
                   <CardTitle>Card title</CardTitle>
@@ -122,7 +121,7 @@ class CardsBasic extends Component {
                   bottom
                   width="100%"
                   src="https://media.istockphoto.com/photos/happy-family-in-a-park-in-summer-autumn-picture-id916825484?k=6&m=916825484&s=612x612&w=0&h=G9CibZQrfySm4uRQQ77RH56UEVQjO40yfGDW2oX988Y="
-                  alt="Card image cap"
+                  alt=""
                 />
               </Card>
             </Col>
@@ -135,13 +134,13 @@ class CardsBasic extends Component {
                 <img
                   width="100%"
                   src="https://media.istockphoto.com/photos/businesswoman-presenting-to-colleagues-at-a-meeting-picture-id474096946?k=6&m=474096946&s=612x612&w=0&h=kqrfS7gZb2AE_SgGOOBi2moHtMIRBr4b0B1jjGuuo6M="
-                  alt="Card image cap"
+                  alt=""
                 />
                 <CardBody>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <CardLink href="javascript:void(0);">Card Link</CardLink>
-                  <CardLink href="javascript:void(0);">Another Link</CardLink>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
                 </CardBody>
               </Card>
               <Card className="main-card mb-3">
@@ -149,7 +148,7 @@ class CardsBasic extends Component {
                   top
                   width="100%"
                   src="https://media.istockphoto.com/photos/man-and-his-dog-doing-renovation-work-at-home-picture-id668040434?k=6&m=668040434&s=612x612&w=0&h=VPr-sAoPX6XPZ3_YrS69WdukVtL60Pa0isG8BeJ_iw8="
-                  alt="Card image cap"
+                  alt=""
                 />
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>

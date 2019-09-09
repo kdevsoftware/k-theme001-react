@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import {
   Button,
   Dropdown,
@@ -8,7 +8,6 @@ import {
   DropdownItem
 } from 'reactstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { Animated } from 'react-animated-css';
 import { Row, Col, Card, CardBody, CardTitle } from 'reactstrap';
 
 class DropdownStyles extends React.Component {
